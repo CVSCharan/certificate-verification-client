@@ -103,3 +103,51 @@
   font-size: 1rem;
   cursor: pointer;
 }
+
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .add-certificates-main-container {
+    padding: 1rem;
+  }
+
+  .add-certificates-form-container {
+    width: 90%;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .add-certificates-main-container {
+    padding: 1rem;
+  }
+
+  .add-certificates-form-container {
+    width: 90%;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .add-certificates-main-container {
+    padding: 1rem;
+  }
+
+  .add-certificates-form-container {
+    width: 90%;
+  }
+}
+
+/* Large Mobile Devices (Portrait) */
+/* iPhone 11 Pro Max, Galaxy Note */
+@media only screen and (min-width: 426px) and (max-width: 480px) {
+  .add-certificates-main-container {
+    padding: 1rem;
+  }
+
+  .add-certificates-form-container {
+    width: 90%;
+  }
+}

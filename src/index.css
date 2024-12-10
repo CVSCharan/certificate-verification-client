@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Itim&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Macondo&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&display=swap");
+
+* {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0px !important;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+  max-width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.itim-regular {
+  font-family: "Itim", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.playwrite-gb-s-text {
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.quicksand-text {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.josefin-sans-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cinzel-text {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.macondo-regular {
+  font-family: "Macondo", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-heading {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.classic-button {
+  height: 45px;
+  width: 170px;
+  border: 2px solid;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.classic-button.light {
+  color: #333;
+  border: 2px solid #333;
+  font-weight: 500;
+}
+
+.classic-button.dark {
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  font-weight: 500;
+}
+
+.classic-button:hover {
+  color: royalblue;
+  border: 2px solid royalblue;
+  font-weight: 500;
+}
+
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .classic-button {
+    height: 40px;
+    width: 110px;
+    font-size: 0.75rem;
+  }
+
+  .footer-container {
+    padding: 0.5rem;
+  }
+
+  .footer-heading {
+    font-size: 0.8rem;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .classic-button {
+    height: 40px;
+    width: 130px;
+    font-size: 0.8rem;
+  }
+
+  .footer-container {
+    padding: 0.5rem;
+  }
+
+  .footer-heading {
+    font-size: 0.8rem;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .classic-button {
+    height: 40px;
+    width: 150px;
+    font-size: 0.8rem;
+  }
+
+  .footer-container {
+    padding: 0.5rem;
+  }
+
+  .footer-heading {
+    font-size: 0.8rem;
+  }
+}
+
+/* Large Mobile Devices (Portrait) */
+/* iPhone 11 Pro Max, Galaxy Note */
+@media only screen and (min-width: 426px) and (max-width: 480px) {
+}

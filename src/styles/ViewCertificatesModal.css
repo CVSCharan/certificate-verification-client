@@ -1,0 +1,169 @@
+.view-certificates-main-container {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-certificates-container {
+  height: 97%;
+  width: 97%;
+  border: 0;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+/* Default styles (light theme) */
+.view-certificates-container.light {
+  background-color: whitesmoke;
+  color: #333;
+}
+
+/* Dark theme styles */
+.view-certificates-container.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.view-certificates-close-icon {
+  font-size: 1.5rem;
+  align-self: flex-end;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.view-certificstes-title {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.view-certificates-container-one {
+  height: 83%;
+  width: 95%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px 15px;
+}
+
+.view-certificates-card {
+  height: 45%;
+  width: 45%;
+  padding: 1rem;
+  border: 2px solid;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.view-certificates-card-title {
+  font-size: 1rem;
+}
+
+.view-certificates-card-sub {
+  width: 95%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 0.5rem;
+}
+
+.view-certificates-card-sub-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  margin: 7px 0;
+}
+
+.view-certificates-card-label {
+  font-size: 1rem;
+}
+
+.view-certificates-card-value {
+  font-size: 0.8rem;
+}
+
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .view-certificates-close-icon {
+    margin-right: 20px;
+  }
+
+  .view-certificates-title {
+    font-size: 1.2rem;
+  }
+
+  .view-certificates-card {
+    width: 100%;
+  }
+
+  .view-certificates-card-title {
+    font-size: 0.9rem;
+  }
+
+  .view-certificates-card-label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .view-certificates-close-icon {
+    margin-right: 20px;
+  }
+
+  .view-certificates-card {
+    width: 90%;
+  }
+
+  .view-certificates-close-icon {
+    margin-right: 20px;
+  }
+
+  .view-certificates-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .view-certificates-close-icon {
+    margin-right: 20px;
+  }
+
+  .view-certificates-card {
+    width: 90%;
+  }
+}
+
+/* Large Mobile Devices (Portrait) */
+/* iPhone 11 Pro Max, Galaxy Note */
+@media only screen and (min-width: 426px) and (max-width: 480px) {
+  .view-certificates-close-icon {
+    margin-right: 20px;
+  }
+
+  .view-certificates-card {
+    width: 90%;
+  }
+}

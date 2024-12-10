@@ -1,0 +1,105 @@
+.add-certificates-main-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 40px;
+}
+
+/* Default styles (light theme) */
+.add-certificates-main-container.light {
+  background-color: whitesmoke;
+  color: #333;
+}
+
+/* Dark theme styles */
+.add-certificates-main-container.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.add-certificates-title {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.add-certificates-form-container {
+  height: 70%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border: 2px solid;
+  border-radius: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 15%;
+  gap: 10px;
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-left: 12px;
+}
+
+/* Base styles */
+.form-input {
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid; /* Fixed typo */
+  border-radius: 30px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Dark theme styles */
+.form-input.dark {
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+}
+
+/* Light theme styles */
+.form-input.light {
+  border: 2px solid #333;
+  color: #333;
+}
+
+/* Calendar icon styling for date input in dark theme */
+.form-input.dark[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Makes the icon white */
+  cursor: pointer;
+}
+
+/* Calendar icon styling for date input in light theme */
+.form-input.light[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0); /* Keeps the icon dark */
+  cursor: pointer;
+}
+
+/* For Firefox (dark theme) */
+.form-input.dark[type="date"]::-moz-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+/* For Firefox (light theme) */
+.form-input.light[type="date"]::-moz-calendar-picker-indicator {
+  filter: invert(0);
+  cursor: pointer;
+}
+
+.add-certificates-back-btn {
+  color: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}

@@ -1,12 +1,12 @@
 .add-certificates-main-container {
-  min-height: 100vh;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
-  gap: 20px;
+  padding: 2rem;
+  gap: 40px;
 }
 
 /* Default styles (light theme) */
@@ -23,83 +23,131 @@
 
 .add-certificates-title {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .add-certificates-form-container {
-  width: 100%;
-  max-width: 500px;
+  height: 70%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  padding: 1.5rem;
+  gap: 30px;
+  border: 2px solid;
+  border-radius: 30px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  gap: 8px;
+  width: 80%;
+  height: 15%;
+  gap: 10px;
 }
 
 .form-label {
   font-weight: 500;
-  font-size: 1rem;
-  margin-left: 8px;
+  font-size: 1.1rem;
+  margin-left: 12px;
 }
 
+/* Base styles */
 .form-input {
-  height: 45px;
+  height: 50px;
   background-color: transparent;
-  border: 1px solid;
-  border-radius: 10px;
+  border: 2px solid; /* Fixed typo */
+  border-radius: 30px;
   padding: 0.5rem;
   font-size: 1rem;
 }
 
 /* Dark theme styles */
 .form-input.dark {
-  border: 1px solid whitesmoke;
+  border: 2px solid whitesmoke;
   color: whitesmoke;
 }
 
 /* Light theme styles */
 .form-input.light {
-  border: 1px solid #333;
+  border: 2px solid #333;
   color: #333;
 }
 
-/* Calendar icon styling */
-.form-input[type="date"]::-webkit-calendar-picker-indicator {
+/* Calendar icon styling for date input in dark theme */
+.form-input.dark[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Makes the icon white */
   cursor: pointer;
 }
 
-/* Back Button */
+/* Calendar icon styling for date input in light theme */
+.form-input.light[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0); /* Keeps the icon dark */
+  cursor: pointer;
+}
+
+/* For Firefox (dark theme) */
+.form-input.dark[type="date"]::-moz-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+/* For Firefox (light theme) */
+.form-input.light[type="date"]::-moz-calendar-picker-indicator {
+  filter: invert(0);
+  cursor: pointer;
+}
+
 .add-certificates-back-btn {
   color: inherit;
   font-size: 1rem;
   cursor: pointer;
-  text-decoration: none;
-  margin-bottom: 1rem;
 }
 
-/* Responsive Design for Small Devices */
-@media only screen and (max-width: 600px) {
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
   .add-certificates-main-container {
     padding: 1rem;
   }
 
   .add-certificates-form-container {
     width: 90%;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .add-certificates-main-container {
     padding: 1rem;
   }
 
-  .form-input {
-    height: 40px;
-    font-size: 0.9rem;
+  .add-certificates-form-container {
+    width: 90%;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .add-certificates-main-container {
+    padding: 1rem;
+  }
+
+  .add-certificates-form-container {
+    width: 90%;
+  }
+}
+
+/* Large Mobile Devices (Portrait) */
+/* iPhone 11 Pro Max, Galaxy Note */
+@media only screen and (min-width: 426px) and (max-width: 480px) {
+  .add-certificates-main-container {
+    padding: 1rem;
+  }
+
+  .add-certificates-form-container {
+    width: 90%;
   }
 }

@@ -91,6 +91,7 @@ const AddCertificate = () => {
             Certificate Name
           </label>
           <input
+            placeholder="Enter Certificate Name"
             id="Certificate Name"
             className={`quicksand-text form-input ${themeValue}`}
             type="text"
@@ -105,6 +106,7 @@ const AddCertificate = () => {
             Holder Name
           </label>
           <input
+            placeholder="Enter Certificate Holder's Name"
             id="Holder Name"
             className={`quicksand-text form-input ${themeValue}`}
             type="text"
@@ -119,6 +121,7 @@ const AddCertificate = () => {
             Created On
           </label>
           <input
+            placeholder="dd/mm/yy"
             id="Created On"
             className={`quicksand-text form-input ${themeValue}`}
             type="date"
@@ -133,6 +136,7 @@ const AddCertificate = () => {
             Valid Till
           </label>
           <input
+            placeholder="dd/mm/yy"
             id="Valid Till"
             className={`quicksand-text form-input ${themeValue}`}
             type="date"
